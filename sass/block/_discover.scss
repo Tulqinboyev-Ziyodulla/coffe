@@ -1,0 +1,150 @@
+.work {
+    color: $bg-py;
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.collection {
+    display: flex;
+    justify-content: center;
+    gap: 95px;
+
+    .collection__card {
+        margin-top: 178px;
+        width:  285px;
+        min-height: 380px;
+        box-shadow: #ddd 5px 5px 5px 5px;
+        border-radius: 15px;
+        padding: 20px;
+        transition: .5s;
+
+        &:hover {
+            background-color: #0E8784;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .number {
+            color: $bg-pink;
+            font-size: 72px;
+            font-weight: 900;
+        }
+
+        .pick {
+            color: $bg-dark;
+            font-size: 32px;
+            font-weight: 900;
+            max-width: 250px;
+            margin-top: 30px;
+        }
+
+        .select {
+            color: $bg-dark;
+            font-size: 16px;
+            font-weight: 400;
+            max-width: 300px;
+            margin-top: 40px;
+        }
+    }
+}
+
+.btn {
+    background-color: $bg-by;
+    color: $bg-white;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 40px;
+    transition: .5s;
+
+    &:hover {
+        background: linear-gradient(blue, $bg-by);
+        border-radius: 20px;
+    }
+}
+
+
+
+@media (max-width:1000px) {
+    .collection {
+
+        .collection__card {
+            width: 200px;
+
+            .number {
+                font-size: 40px;
+            }
+
+            .pick {
+                font-size: 18px;
+            }
+
+            .select {
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .collection {
+
+        .collection__card {
+            width: 200px;
+            min-height: 50px;
+
+            .number {
+                font-size: 40px;
+            }
+
+            .pick {
+                font-size: 18px;
+            }
+
+            .select {
+                text-align: center;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .btn {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width:550px) {
+    .collection {
+
+        .collection__card {
+            display: none;
+            width: 100px;
+            min-height: 50px;
+
+            .number {
+                font-size: 20px;
+            }
+
+            .pick {
+                font-size: 12px;
+            }
+
+            .select {
+                text-align: center;
+                font-size: 8px;
+            }
+        }
+    }
+
+    .btn {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+}

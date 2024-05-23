@@ -1,0 +1,42 @@
+.hero {
+    background: url(/assets/img.svg) no-repeat center/cover;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 600px;
+    margin-top: 43px;
+}
+
+.hero__text {
+    margin-left: 100px;
+    padding: 100px 0;
+
+    .made {
+        font-size: 72px;
+        color: $bg-white;
+        max-width: 500px;
+    }
+
+    .star {
+        max-width: 450px;
+        color: $bg-white;
+        font-size: 16px;
+        margin-top: 32px;
+        line-height: 26px;
+    }
+
+    button {
+        background-color: #0E8784;
+        color: $bg-white;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        padding: 15px 40px;
+        margin-top: 56px;
+        transition: .5s;
+
+        &:hover {
+            background-color: #0e6387d2;
+            border-radius: 15px;
+        }
+    }
+}
